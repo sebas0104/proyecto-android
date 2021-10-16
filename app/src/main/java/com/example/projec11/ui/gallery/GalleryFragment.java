@@ -1,9 +1,11 @@
 package com.example.projec11.ui.gallery;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,7 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.projec11.MainActivity2;
 import com.example.projec11.R;
+import com.example.projec11.databinding.ActivityMainBinding;
 import com.example.projec11.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
@@ -22,6 +26,9 @@ public class GalleryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+
+
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
@@ -29,6 +36,8 @@ public class GalleryFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
+
+
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
