@@ -15,7 +15,7 @@ public class ProyectoAdminSQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table Usuario (id_user int primary key, nickname text,contraseña text,nombre text,apellido text,email text,fechanacimento datetime,departamento text,pais text,direccion text,tarjeta text)");
+        db.execSQL("create table Usuario (id_user int primary key, nickname text,contraseña text,nombre text,apellido text,email text,fechanacimento datetime,pais text,departamento text,direccion text)");
         db.execSQL("create table Categoria (id_categoria int primary key, nombre_categoria text)");
         db.execSQL("create table Juego (id_juego int primary key,id_proveedor int,id_Categoria int,id_plataforma int,nombrejuego text,descripcion_juego text, precio_juego real)");
         db.execSQL("create table Proveedor (id_proveedor int primary key,contraseña text,descripcion text, precio real)");

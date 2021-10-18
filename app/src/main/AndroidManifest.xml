@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projec11">
         <activity
-            android:name=".Login"
+            android:name=".Registrar"
             android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +27,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Projec11.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.Projec11.NoActionBar"></activity>
     </application>
 
 </manifest>
