@@ -10,12 +10,6 @@
     tools:context=".Registrar">
 
 
-    <EditText
-        android:id="@+id/et_id_user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Usuario"
-        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/et_nickname"
@@ -24,26 +18,6 @@
         android:hint="Nickname"
         android:minHeight="48dp"></EditText>
 
-    <EditText
-        android:id="@+id/et_contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre"
-        android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_apellido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Apellido"
-        android:minHeight="48dp"></EditText>
 
     <EditText
         android:id="@+id/et_emeil"
@@ -52,35 +26,13 @@
         android:hint="Emeil"
         android:minHeight="48dp"></EditText>
 
-    <EditText
-        android:id="@+id/et_fecha_naci"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Fecha de  Nacimiento"
-        android:minHeight="48dp"></EditText>
 
     <EditText
-        android:id="@+id/et_pais"
+        android:id="@+id/et_contraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Pais"
+        android:hint="Contraseña"
         android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_departamen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Departamento"
-        android:minHeight="48dp"></EditText>
-
-
-    <EditText
-        android:id="@+id/et_Direccion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Direccion"
-        android:minHeight="48dp"></EditText>
-
 
 
     <Button
@@ -94,8 +46,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login">
-    </Button>
+        android:text="Login"></Button>
 
 
 </LinearLayout>
