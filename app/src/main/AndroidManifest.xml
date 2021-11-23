@@ -17,24 +17,28 @@
         <activity
             android:name=".Login"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity2"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Projec11.NoActionBar"
-            ></activity>
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".panActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Projec11.NoActionBar">
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
         </activity>
     </application>
 

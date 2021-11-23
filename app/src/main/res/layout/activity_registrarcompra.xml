@@ -24,12 +24,6 @@
         android:hint="Nickname"
         android:minHeight="48dp"></EditText>
 
-    <EditText
-        android:id="@+id/et_contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:minHeight="48dp"></EditText>
 
     <EditText
         android:id="@+id/et_nombre"
@@ -45,40 +39,12 @@
         android:hint="Apellido"
         android:minHeight="48dp"></EditText>
 
-    <EditText
-        android:id="@+id/et_emeil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Emeil"
-        android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_fecha_naci"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Fecha de  Nacimiento"
-        android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_pais"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Pais"
-        android:minHeight="48dp"></EditText>
-
-    <EditText
-        android:id="@+id/et_departamen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Departamento"
-        android:minHeight="48dp"></EditText>
-
 
     <EditText
         android:id="@+id/et_Direccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Direccion"
+        android:hint="Distrito"
         android:minHeight="48dp"></EditText>
 
 

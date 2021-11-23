@@ -33,12 +33,12 @@ public class RegistrarCompra extends AppCompatActivity implements View.OnClickLi
 
         et_emeil=findViewById(R.id.et_emeil);
 
-        et_fecha_naci=findViewById(R.id.et_fecha_naci);
+        //et_fecha_naci=findViewById(R.id.et_fecha_naci);
 
-        et_pais=findViewById(R.id.et_pais);
+        //et_pais=findViewById(R.id.et_pais);
 
 
-        et_departamen=findViewById(R.id.et_departamen);
+        //et_departamen=findViewById(R.id.et_departamen);
 
 
         et_Direccion=findViewById(R.id.et_Direccion);
