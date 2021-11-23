@@ -25,6 +25,18 @@
         android:textColor="@android:color/white"/>
 
     <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:text="NOMBRE DEL JUEGO"/>
+
+
+    <TextView
         android:id="@+id/campNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +46,19 @@
         android:paddingTop="10dp"
         android:textColor="@android:color/white"
         android:text="NOMBRE DEL JUEGO"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="CATEGORÍA DEL JUEGO"
+        android:textColor="@android:color/white"/>
+
     <TextView
         android:id="@+id/campCate"
         android:layout_width="match_parent"
@@ -45,6 +70,20 @@
         android:paddingBottom="10dp"
         android:text="CATEGORÍA DEL JUEGO"
         android:textColor="@android:color/white"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="DESCRIPCIÓN DEL JUEGO"
+        android:textColor="@android:color/white"/>
+
+
     <TextView
         android:id="@+id/campDes"
         android:layout_width="match_parent"
@@ -86,6 +125,18 @@
         android:paddingRight="5dp"
         android:paddingBottom="5dp"
         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="PRECIO:"
+            android:textColor="@android:color/white"/>
+
+
 
         <TextView
             android:id="@+id/campPre"

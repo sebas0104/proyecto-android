@@ -27,12 +27,35 @@ public class panActivity extends AppCompatActivity {
          campDes= findViewById(R.id.campDes);
          campPre= findViewById(R.id.campPre);
 
-      Buscar();
+        String valor = getIntent().getStringExtra("id");
+        TextView campId = findViewById(R.id.campId);
+        campId.setText(valor.toString());
+
+        String valor2 = getIntent().getStringExtra("nombrejuego");
+        TextView campNom = findViewById(R.id.campNom);
+        campNom.setText(valor2.toString());
+
+        String valor3 = getIntent().getStringExtra("id_Categoria");
+        TextView campCate = findViewById(R.id.campCate);
+        campCate.setText(valor3.toString());
+
+        String valor4 = getIntent().getStringExtra("descripcion_juego");
+        TextView campDes = findViewById(R.id.campDes);
+        campDes.setText(valor4.toString());
+
+        String valor5= getIntent().getStringExtra("precio_juego");
+        TextView campPre = findViewById(R.id.campPre);
+        campPre.setText(valor5.toString());
+
+
+
+
+        //Buscar();
 
 
     }
 
-    private void Buscar() {
+    /*private void Buscar() {
         String valor = getIntent().getStringExtra("id");
         TextView campId = findViewById(R.id.campId);
         campId.setText(valor.toString());
@@ -57,5 +80,5 @@ public class panActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this,"Debes introducir el código del Docente",Toast.LENGTH_LONG).show();
         }
-    }
+    }*/
 }
