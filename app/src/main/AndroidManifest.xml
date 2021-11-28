@@ -18,6 +18,12 @@
             android:name=".Login"
             android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity2"
@@ -25,17 +31,53 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.Projec11.NoActionBar"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name=".panActivity"
             android:exported="true"
             android:label="@string/app_name"
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".ModoCompraActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".licenciaUser"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".ui.ModalidadFisicaQR"
+            android:exported="true"
+            android:label="projec1.1"
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".CompraActivity"
+            android:exported="true"
+            android:label="projec1.1"
+            android:theme="@style/Theme.Projec11.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".CompraActivityQR"
+            android:exported="true"
+            android:label="projec1.1"
             android:theme="@style/Theme.Projec11.NoActionBar" >
 
 

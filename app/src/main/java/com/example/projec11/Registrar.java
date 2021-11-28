@@ -12,7 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Registrar extends AppCompatActivity implements View.OnClickListener {
-    EditText et_nickname ,et_emeil , et_contraseña;
+    EditText et_contraseña ,et_id_user , et_nickname , et_nombre , et_apellido ,
+            et_emeil, et_fecha_naci , et_pais , et_departamen , et_Direccion,et_Tarjeta;
     Button btnIns, btnLogin;
 
     @Override
@@ -20,11 +21,29 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
 
+        et_id_user= findViewById(R.id.et_id_user);
+
         et_nickname=findViewById(R.id.et_nickname);
+
+        et_contraseña=findViewById(R.id.et_contraseña);
+
+        et_nombre=findViewById(R.id.et_nombre);
+
+        et_apellido=findViewById(R.id.et_apellido);
 
         et_emeil=findViewById(R.id.et_emeil);
 
-        et_contraseña=findViewById(R.id.et_contraseña);
+        et_fecha_naci=findViewById(R.id.et_fecha_naci);
+
+        et_pais=findViewById(R.id.et_pais);
+
+
+        et_departamen=findViewById(R.id.et_departamen);
+
+
+        et_Direccion=findViewById(R.id.et_Direccion);
+
+        et_Tarjeta=findViewById(R.id.et_Tarjeta);
 
         btnIns=findViewById(R.id.btn_ins);
 
@@ -54,36 +73,85 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
 
         SQLiteDatabase BaseDeDatos=admin.getWritableDatabase();
 
+        String usuario= et_id_user.getText().toString();
 
         String Nickname=et_nickname.getText().toString();
 
-        String Email=et_emeil.getText().toString();
-
         String contraseña=et_contraseña.getText().toString();
 
+        String Nombre=et_nombre.getText().toString();
+
+        String Apellido=et_apellido.getText().toString();
+
+        String Email=et_emeil.getText().toString();
 
 
-        if (!Nickname.isEmpty() && !Email.isEmpty()  && !contraseña.isEmpty()){
+        String Fecha_Nacimiento=et_fecha_naci.getText().toString();
+
+
+        String Pais=et_pais.getText().toString();
+
+        String Departamento=et_departamen.getText().toString();
+
+        String Direccion=et_Direccion.getText().toString();
+
+        String Tarjeta=et_Tarjeta.getText().toString();
+
+
+
+        if (!usuario.isEmpty() && !Nickname.isEmpty() && !contraseña.isEmpty() && !Nombre.isEmpty()
+                && !Apellido.isEmpty() && !Email.isEmpty() && !Fecha_Nacimiento.isEmpty() && !Pais.isEmpty()
+                && !Departamento.isEmpty() && !Direccion.isEmpty() && !Tarjeta.isEmpty()){
 
             ContentValues registro=new ContentValues();
 
-            registro.put("Nickname",Nickname);
+            registro.put("usuario",usuario);
 
-            registro.put("Email",Email);
+            registro.put("Nickname",Nickname);
 
             registro.put("contraseña",contraseña);
 
+            registro.put("Nombre",Nombre);
 
+            registro.put("Apellido",Apellido);
+
+            registro.put("Email",Email);
+
+            registro.put("Fecha_Nacimiento",Fecha_Nacimiento);
+
+            registro.put("Pais",Pais);
+
+            registro.put("Departamento",Departamento);
+
+            registro.put("Direccion",Direccion);
+
+            registro.put("Tarjeta",Tarjeta);
 
             BaseDeDatos.insert("Usuario",null,registro);
 
             BaseDeDatos.close();
 
+            et_id_user.setText("");
+
             et_nickname.setText("");
+
+            et_contraseña.setText("");
+
+            et_nombre.setText("");
+
+            et_apellido.setText("");
 
             et_emeil.setText("");
 
-            et_contraseña.setText("");
+            et_fecha_naci.setText("");
+
+            et_pais.setText("");
+
+            et_departamen.setText("");
+
+            et_Direccion.setText("");
+
+            et_Tarjeta.setText("");
 
 
             Toast.makeText(this,"Registro exitoso",Toast.LENGTH_SHORT).show();
